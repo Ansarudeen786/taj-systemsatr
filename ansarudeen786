@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAJ SYSTEMS - ATTUR</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f6f6f6;
+        }
+
+        header {
+            background: #0b0f3b;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px 0 0;
+        }
+
+        /* Slider */
+        .slider {
+            position: relative;
+            overflow: hidden;
+            height: 420px;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 12s infinite;
+        }
+
+        .slides img, .slides video {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0%   { margin-left: 0; }
+            30%  { margin-left: 0; }
+            35%  { margin-left: -100%; }
+            65%  { margin-left: -100%; }
+            70%  { margin-left: -200%; }
+            100% { margin-left: -200%; }
+        }
+
+        /* Services */
+        .services {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #0b0f3b;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .card {
+            width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgb(0 0 0 / 15%);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .card h3 { margin-top: 15px; }
+
+        /* Footer */
+        footer {
+            background: #0b0f3b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p { margin: 5px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TAJ SYSTEMS - ATTUR</h1>
+    <p>Contact: <b>93845 45492</b></p>
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+    <div class="slides">
+        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="CCTV Installation">
+
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Computer Services">
+
+        <video autoplay muted loop>
+            <source src="https://cdn.pixabay.com/vimeo/295828594/tech-19105.mp4?width=1280" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<!-- SERVICES SECTION -->
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581090464777-cc5250cdddda" alt="CCTV Installation">
+            <h3>CCTV Installation</h3>
+            <p>High-quality security cameras with professional installation and maintenance.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Computer Services">
+            <h3>Computer Services</h3>
+            <p>Complete PC repair, software support, networking and hardware solutions.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop Service">
+            <h3>Laptop Services</h3>
+            <p>Expert laptop repair, OS installation, upgrades and troubleshooting.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p><b>TAJ SYSTEMS - ATTUR</b></p>
+    <p>Contact: 93845 45492</p>
+</footer>
+
+</body>
+</html>
